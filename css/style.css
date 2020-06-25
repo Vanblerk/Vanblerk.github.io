@@ -3,8 +3,18 @@ body {
     line-height: 1.8;
     color: #383838;
     text-align: justify;
+    padding-top: 120px;
 
 }
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding-top: 170px;
+    }
+}
+
+
 h1 {
     text-shadow: 0px 0px 4px black;
     /*background-color: rgba(0, 0, 0, 0.5);*/
@@ -112,9 +122,12 @@ div.faq-content {
 }
 /*Home*/
 #top-bar {
+    top: 0px;
     position: fixed;
     background-color: white;
+    padding: 0px;
     width: 100%;
+    z-index: 9999;
 }
 
 
@@ -346,6 +359,7 @@ img#trust-types {
 }
 
 #navbar {
+    padding-left: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
 }
@@ -359,7 +373,6 @@ img#trust-types {
     letter-spacing: 2px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
-    /*overflow: hidden;*/
 }
 .navbar li a {
     color: #fff !important;
@@ -389,9 +402,42 @@ img#trust-types {
 }
 #contactHeader {
     padding: 0px !important;
-
     background-color: white;
 }
+
+#contactHeader > div > div > h2, h3, h4 {
+    margin: 10px 0px 10px 0px;
+}
+
+#contactHeader > div > div {
+    text-align: left;
+}
+
+#contactHeader > div > div > div{
+    padding-left: 0px !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    #contactHeader > div > div {
+        text-align: center;
+        margin: 0px 0 !important;
+    }
+
+    #contactHeader > div > div > h3, h4 {
+        margin: 1px;
+    }
+
+    #contactHeader > div > div > h2 {
+        margin: 1px;
+    }
+
+    #contactHeader > div > div > h2, h3, h4 {
+        text-align: left !important;
+        float: none !important;
+    }
+}
+
 /* Dropdown */
 .open .dropdown-toggle {
     color: #fff ;
@@ -399,7 +445,7 @@ img#trust-types {
 }
 
 .dropdown-menu {
-    width: 100% !important;
+    width: 200% !important;
     padding: 0;
 
 }
