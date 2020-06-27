@@ -8,7 +8,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-
     body {
         padding-top: 170px;
     }
@@ -26,7 +25,7 @@ h1.non-jumbotron-header {
 h2 {
     font-size: 24px;
     text-transform: uppercase;
-    color: #303030;
+    color: #b5a12b;
     font-weight: 600;
     margin-bottom: 30px;
 }
@@ -53,7 +52,7 @@ h3 {
     line-height: 1.375em;
     font-weight: 800;
     margin-bottom: 15px;
-    color: #303030;
+    color: #b5a12b;
 }
 h4 {
     font-size: 19px;
@@ -65,7 +64,7 @@ h4 {
 
 strong {
     font-weight: bold;
-    color: #959595;
+    color: #000000;
 }
 
 
@@ -453,10 +452,13 @@ img#trust-types {
     margin: 0px;
     padding: 0px;
 }
+
 /* Dropdown links */
 .dropdown-menu li a {
     color: #000 !important;
     white-space: normal;
+    background-color: #fff !important;
+
 }
 
 .dropdown-menu li a:hover {
@@ -468,6 +470,17 @@ img#trust-types {
 .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu {
     display: block;
 }
+
+@media screen and (max-width: 768px) {
+    .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu {
+        display: initial;
+    }
+    .navbar-heading {
+        padding-left: 2em !important;
+    }
+}
+
+
 
 
 /*Footer*/
