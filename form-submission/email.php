@@ -52,6 +52,8 @@
 //    $headers .= "From: " . $email . "\r\n";
 
     mail($to, $subject, $fullMessage, $headers);
+
+    header('Location: '. 'form-submission-success.html');
 ?>
 
 </body>

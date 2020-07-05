@@ -131,26 +131,36 @@ div.faq-content {
 
 
 #home-jumbotron.jumbotron-image {
-    background-image: url("../images/home.jpg");
+    background-image: url("../images/home-4.jpg");
+    background-position: center bottom 20%;
     background-size: cover;
 
 }
 
 /*About us*/
-#about-us-jumbotron.jumbotron-image {
-    background-image: url("../images/about-us.jpg");
+/*#about-us-jumbotron.jumbotron-image {*/
+    /*background-image: url("../images/about-us.jpg");*/
+    /*background-size: cover;*/
+/*}*/
+
+/*Contact us*/
+#contact-jumbotron.jumbotron-image {
+    background-image: url("../images/contact-2.jpg");
+    background-position: center top 20%;
     background-size: cover;
 }
 
-/*Contact us*/
-#contact-jumbotron.jumbotron-image{
-
+#faq-jumbotron.jumbotron-image {
+    background-image: url("../images/faq.jpg");
+    background-position: center top 27%;
+    background-size: cover;
 }
+
 
 /*Business services*/
 /*Business rescue*/
 #business-rescue-jumbotron.jumbotron-image {
-    background-image: url("../images/business-services/business-rescue.jpg");
+    background-image: url("../images/business-services/business-rescue-2.jpg");
     background-position: center top 15%;
     background-size: cover;
 }
@@ -160,77 +170,91 @@ div.faq-content {
 
 }
 
+/*Compromise*/
+#compromise-jumbotron.jumbotron-image {
+    background-image: url("../images/business-services/compromise.jpg");
+    background-position: center top 35%;
+    background-size: cover;
+}
 /*Debt Compromises*/
 #debt-compromises-jumbotron.jumbotron-image {
-    background-image: url("../images/business-services/debt-compromises.jpg");
+    background-image: url("../images/business-services/compromise.jpg");
     background-size: cover;
 }
 
 /*New Companies*/
 #new-companies-jumbotron.jumbotron-image {
-    background-image: url("../images/business-services/new-companies2.jpg");
-    background-position: center bottom 30%;
+    background-image: url("../images/business-services/good-times.jpg");
+    background-position: center top 30%;
     background-size: cover;
 }
 
 /*Tax relief applications*/
 #tax-relief-applications-jumbotron.jumbotron-image {
-    background-image: url("../images/business-services/tax-relief.png");
+    background-image: url("../images/business-services/tax-debt.jpg");
     background-size: cover;
 }
 
 /*Tax strategy*/
 #tax-strategy-jumbotron.jumbotron-image {
-    background-image: url("../images/business-services/tax-strategy.jpg");
+    background-image: url("../images/business-services/stategy.jpg");
     background-size: cover;
 }
 
 /*Voluntary liquidation*/
 #voluntary-liquidation-jumbotron.jumbotron-image {
-    background-image: url("../images/business-services/tax-strategy.jpg");
+    background-image: url("../images/business-services/business-2.jpg");
+    background-size: cover;
+}
+
+/*Corporate Structuring*/
+#corporate-structuring-jumbotron.jumbotron-image {
+    background-image: url("../images/business-services/corporate-structuring-2.jpg");
     background-size: cover;
 }
 
 /*Other services*/
 /*Insolvency Inquiries*/
 #insolvency-inquiries-jumbotron.jumbotron-image {
-
+    background-image: url("../images/business-services/insolvency-enquiries.jpg");
+    background-size: cover;
 }
 
 /*Legal advice and opinions*/
 #legal-advice-jumbotron.jumbotron-image {
-
+    background-image: url("../images/business-services/advice.jpg");
+    background-size: cover;
 }
 
 /*Property transfers*/
 #property-transfers-jumbotron.jumbotron-image {
-
+    background-image: url("../images/personal-services/house.jpg");
+    background-size: cover;
 }
 
 /*Personal services*/
 /*Antenuptual contracts*/
 #antenuptual-contracts-jumbotron.jumbotron-image {
-    background-image: url("../images/personal-services/antenuptial-contract2.jpg");
-    background-position: center bottom;
+    background-image: url("../images/personal-services/marriage-4.jpg");
     background-size: cover;
 }
 
 /*Asset Protection*/
 #asset-protection-jumbotron.jumbotron-image {
-    background-image: url("../images/personal-services/asset-protection.png");
+    background-image: url("../images/personal-services/house.jpg");
     background-size: cover;
 }
 
 /*Change of matremonial property system*/
 #change-of-matrimonial-property-jumbotron.jumbotron-image {
-    background-image: url("../images/personal-services/matrimonial-prop-change.jpg");
-    background-position: center top 15%;
+    background-image: url("../images/personal-services/marriage.jpg");
+    /*background-position: center top 15%;*/
     background-size: cover;
 }
 
 /*Family trusts*/
 #family-trusts-jumbotron.jumbotron-image {
-    background-image: url("../images/personal-services/family-trust.jpg");
+    background-image: url("../images/personal-services/family-2.jpg");
     background-size: cover;
 }
 
@@ -250,7 +274,7 @@ div.faq-content {
 
 /*Wills*/
 #wills-jumbotron.jumbotron-image {
-    background-image: url("../images/personal-services/wills2.jpg");
+    background-image: url("../images/personal-services/book-notes.jpg");
     background-position: center bottom 40%;
     background-size: cover;
 }
@@ -421,14 +445,23 @@ img#trust-types {
     #contactHeader > div > div {
         text-align: center;
         margin: 0px 0 !important;
+        font-size: 1.0em;
     }
 
     #contactHeader > div > div > h3, h4 {
         margin: 1px;
+        font-size: 0.8em;
+    }
+
+    #contactHeader > div > div > h4 {
+        padding-left: 5px;
+        margin: 1px;
+        font-size: 0.8em;
     }
 
     #contactHeader > div > div > h2 {
         margin: 1px;
+        font-size: 0.9em;
     }
 
     #contactHeader > div > div > h2, h3, h4 {
@@ -467,14 +500,13 @@ img#trust-types {
     border-bottom: none;
 }
 
-.dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu {
-    display: block;
+@media screen and (min-width: 768px) {
+    .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .dropdown:hover .dropdown-menu, .btn-group:hover .dropdown-menu {
-        display: initial;
-    }
     .navbar-heading {
         padding-left: 2em !important;
     }

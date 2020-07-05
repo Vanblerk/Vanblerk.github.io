@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body id="myPage">
@@ -234,6 +235,8 @@
                     </div>
                 </div>
                 <textarea class="form-control" id="message" name="message" placeholder="Message" rows="8"></textarea><br>
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                <br />
                 <div class="row">
                     <div class="col-sm-12 form-group">
                         <button class="btn btn-primary btn-block" type="submit">Send</button>
