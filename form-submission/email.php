@@ -2,7 +2,7 @@
 <body>
 <?php
 
-    $to = "vanblerkh@gmail.com";
+    $to = "johann.pepler@gmail.com";
 
     $subject = "Client Enquiry";
 
