@@ -410,6 +410,8 @@ img#trust-types {
     color: #fff;
 }
 
+/*NAV BAR*/
+
 #navbar {
     padding-left: 0px;
     padding-top: 0px;
@@ -453,6 +455,7 @@ img#trust-types {
     border-color: transparent;
     color: #fff !important;
 }
+
 .affix {
     top: 0;
     width: 100%;
