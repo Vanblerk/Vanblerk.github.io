@@ -134,7 +134,7 @@ div.faq-content {
 .jumbotron {
     background-color: #1e243b;
     color: #fff;
-    padding: 100px 25px;
+    padding: 180px 25px;
     height: 50%;
     background-position: center;
     font-family: Montserrat, sans-serif;
@@ -305,6 +305,13 @@ div.faq-content {
 }
 
 /*Images*/
+img#jjPeplerLogo {
+    padding-bottom: 2px;
+    padding-top: 2px;
+    height: auto;
+    width: 180px;
+
+}
 /*Types of trusts*/
 
 #trust-types-container {
@@ -465,6 +472,8 @@ img#trust-types {
     position: relative;
     padding-top: 10px;
 }
+
+
 #contactHeader {
     padding: 0px !important;
     background-color: white;
@@ -484,6 +493,13 @@ img#trust-types {
 
 
 @media screen and (max-width: 768px) {
+    img#jjPeplerLogo {
+        width: 100px;
+    }
+    .logo-container {
+        text-align: left;
+        background-color: #1e243b;hp
+    }
     #contactHeader > div > div {
         text-align: center;
         margin: 0px 0 !important;
