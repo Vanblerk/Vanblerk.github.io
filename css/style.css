@@ -3,13 +3,11 @@ body {
     line-height: 1.8;
     color: #383838;
     text-align: justify;
-    padding-top: 120px;
 
 }
 
 @media screen and (max-width: 768px) {
     body {
-        padding-top: 170px;
     }
 }
 
