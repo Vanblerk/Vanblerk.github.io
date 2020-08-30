@@ -1,8 +1,6 @@
-<html>
-<body>
 <?php
-
     $to = "johann.pepler@gmail.com";
+    $testTo = "lawliquidattorneys@gmail.com";
 
     $subject = "Client Enquiry";
 
@@ -19,7 +17,7 @@
     $fullMessage = "
     <html>
         <head>
-            <title>Client Enquiry</title>
+            <title>Client Enquiry</title>            
         </head>
         <body>
             <h3>Client Details</h3>
@@ -49,10 +47,6 @@
 
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    mail($to, $subject, $fullMessage, $headers);
+    mail($testTo, $subject, $fullMessage, $headers);
 
     header('Location: '. 'form-submission-success.html');
-?>
-
-</body>
-</html>

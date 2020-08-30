@@ -13,6 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="">
 </head>
 <body id="myPage">
 
@@ -215,7 +216,7 @@ W                        </ul>
     <h2>CONTACT</h2>
     <div class="row">
         <div class="col-sm-7">
-            <form action="form-submission/email.php" method="post">
+            <form id="contactForm" action="form-submission/email.php" method="post">
                 <div class="row">
                     <div class="col-sm-6 form-group">
                         <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -233,11 +234,13 @@ W                        </ul>
                     </div>
                 </div>
                 <textarea class="form-control" id="message" name="message" placeholder="Message" rows="8"></textarea><br>
-                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-                <br />
                 <div class="row">
                     <div class="col-sm-12 form-group">
-                        <button class="btn btn-primary btn-block" type="submit">Send</button>
+                        <button class="btn btn-primary btn-block g-recaptcha"
+                                data-sitekey="6Lfz2cQZAAAAANWxJ9gpAQed4z0Wp3lQm75yJFu8"
+                                data-callback='onSubmit'
+                                data-action='submit'
+                                type="submit">Send</button>
                     </div>
                 </div>
             </form>
@@ -299,18 +302,25 @@ W                        </ul>
 </footer>
 
 <script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("contactNav").style.top = "0";
-        } else {
-            document.getElementById("contactNav").style.top = "-50px";
-        }
-        prevScrollpos = currentScrollPos;
+    function onSubmit(token) {
+        console.log("Submitting form");
+        document.getElementById("contactForm").submit();
     }
 </script>
 
+
+<!--<script>-->
+    <!--var prevScrollpos = window.pageYOffset;-->
+    <!--window.onscroll = function() {-->
+        <!--var currentScrollPos = window.pageYOffset;-->
+        <!--if (prevScrollpos > currentScrollPos) {-->
+            <!--document.getElementById("contactNav").style.top = "0";-->
+        <!--} else {-->
+            <!--document.getElementById("contactNav").style.top = "-50px";-->
+        <!--}-->
+        <!--prevScrollpos = currentScrollPos;-->
+    <!--}-->
+<!--</script>-->
 <script>
     $(document).ready(function(){
         // Add smooth scrolling to all links in navbar + footer link
