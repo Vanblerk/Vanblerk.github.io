@@ -85,6 +85,9 @@ strong {
     color: #000000;
 }
 
+.container {
+
+}
 
 /*FAQ*/
 .faq-main-button {
@@ -429,13 +432,43 @@ img#trust-types {
     border: 0;
     font-size: 12px !important;
     line-height: 1.42857143 !important;
-    letter-spacing: 2px;
+    letter-spacing: 1.3px;
     border-radius: 0;
     font-family: Montserrat, sans-serif;
 }
+
+.nav-logo {
+    height: 40px;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-logo {
+        padding-left: 20px;
+    }
+}
+
 .navbar li a {
     color: #fff !important;
     border-bottom: 2px solid transparent;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.navbar li.contactNumber {
+    color: #fff !important;
+    border-bottom: 2px solid transparent;
+    padding: 15px 8px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar li.contactNumber {
+        color: #fff !important;
+        border-bottom: 2px solid transparent;
+        padding: 10px 8px 10px 24px;
+    }
 }
 
 .navbar li ul li{
