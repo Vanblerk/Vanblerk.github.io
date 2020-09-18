@@ -85,8 +85,8 @@ strong {
     color: #000000;
 }
 
-.container {
-
+th {
+    text-align: center;
 }
 
 /*FAQ*/
@@ -95,6 +95,8 @@ strong {
     border: 1px solid white;
     font-size: 19px;
     color: #b5a12b;
+    white-space:normal !important;
+    word-wrap:break-word;
 }
 
 .faq-content-button  + div {
